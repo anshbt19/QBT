@@ -1,0 +1,33 @@
+﻿<airline-class *ngIf="pricelist" [Firstclass]="getFirstClassFare()"
+               [Economyclass]="getEconomyClassFare()"
+               [Businessclass]="getBusinessClassFare()"
+               (RadioButtonSelectionChanged)="onClassRadioButtonChange($event)">
+</airline-class>
+<br />
+<br />
+<table>
+    <thead>
+        <tr>
+            <td><h2>Airline Name</h2></td>
+            <td><h2>Airline Class</h2></td>
+            <td><h2>Fare</h2></td>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let list of pricelist;">
+            <tr *ngIf="selectedClassRadioButtonValue==list.airlineclass">
+                <td>{{list.airlinename}}</td>
+                <td>{{list.airlineclass}}</td>
+                <td>{{list.fare | currency:'AUD':true}}</td>
+            </tr>
+        </ng-container>
+        <tr *ngIf="!pricelist">
+            <td colspan="3">{{statusMessage}}</td>
+        </tr>
+        <tr *ngIf="pricelist && pricelist.length==0">
+            <td colspan="3">No Price to display</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<button (click)="getpricelist()">Refresh Pricelist</button>

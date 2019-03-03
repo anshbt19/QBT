@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FareCompareModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PRICECOMPARE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="airlinename" Type="nvarchar" MaxLength="50" />
+    <Property Name="airlineclass" Type="nvarchar" MaxLength="50" />
+    <Property Name="fare" Type="int" />
+  </EntityType>
+  <EntityContainer Name="FareCompareModelStoreContainer">
+    <EntitySet Name="PRICECOMPARE" EntityType="Self.PRICECOMPARE" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

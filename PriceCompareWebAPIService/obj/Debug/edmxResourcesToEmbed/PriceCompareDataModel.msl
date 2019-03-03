@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FareCompareModelStoreContainer" CdmEntityContainer="FareCompareEntities">
+    <EntitySetMapping Name="PRICECOMPARE">
+      <EntityTypeMapping TypeName="FareCompareModel.PRICECOMPARE">
+        <MappingFragment StoreEntitySet="PRICECOMPARE">
+          <ScalarProperty Name="fare" ColumnName="fare" />
+          <ScalarProperty Name="airlineclass" ColumnName="airlineclass" />
+          <ScalarProperty Name="airlinename" ColumnName="airlinename" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
