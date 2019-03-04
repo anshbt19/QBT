@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var pricecompare_service_1 = require("./pricecompare.service");
-var PricecompareListComponent = /** @class */ (function () {
+var PricecompareListComponent = (function () {
     function PricecompareListComponent(_pricecompareService) {
         this._pricecompareService = _pricecompareService;
         this.selectedClassRadioButtonValue = 'Firstclass';
@@ -112,16 +112,16 @@ var PricecompareListComponent = /** @class */ (function () {
         }
         this.counter += 1;
     };
-    PricecompareListComponent = __decorate([
-        core_1.Component({
-            selector: 'list-pricecompare',
-            templateUrl: 'app/pricecompare/pricecomparelist.component.html',
-            styleUrls: ['app/pricecompare/pricecomparelist.component.css'],
-            providers: [pricecompare_service_1.PricecompareService]
-        }),
-        __metadata("design:paramtypes", [pricecompare_service_1.PricecompareService])
-    ], PricecompareListComponent);
     return PricecompareListComponent;
 }());
+PricecompareListComponent = __decorate([
+    core_1.Component({
+        selector: 'list-pricecompare',
+        templateUrl: 'app/pricecompare/pricecomparelist.component.html',
+        styleUrls: ['app/pricecompare/pricecomparelist.component.css'],
+        providers: [pricecompare_service_1.PricecompareService]
+    }),
+    __metadata("design:paramtypes", [pricecompare_service_1.PricecompareService])
+], PricecompareListComponent);
 exports.PricecompareListComponent = PricecompareListComponent;
 //# sourceMappingURL=pricecomparelist.component.js.map
