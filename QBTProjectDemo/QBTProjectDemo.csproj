@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomStyle.css" />
     <Content Include="node_modules\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="node_modules\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Include="node_modules\bootstrap\dist\css\bootstrap.css" />
@@ -97,6 +98,7 @@
     <Content Include="node_modules\bootstrap\js\tooltip.js" />
     <Content Include="node_modules\bootstrap\js\transition.js" />
     <Content Include="packages.config" />
+    <Content Include="src\app\app.component.html" />
     <Content Include="src\app\pricecompare\airlineclass.component.css" />
     <Content Include="src\app\pricecompare\airlineclass.component.html" />
     <Content Include="src\app\pricecompare\pricecomparelist.component.css" />
